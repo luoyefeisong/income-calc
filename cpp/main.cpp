@@ -24,8 +24,8 @@ void func(double cur ,double year)
 void statistic(int p, int i, double price)
 {
 	if (p) {
-		g_stat[i].price += price;
-		g_stat[i].times_out++;
+		g_stat[i].price += price; //卖出的钱
+		g_stat[i].times_out++;  //卖出次数
 	}
 	else {
 		g_stat[i].price -= price;
@@ -37,40 +37,40 @@ double price_diff(double a, double b, int *p)
 {
 	double r = b - a;
 	double ret = 0;
-	*p = false;
+	*p = true; //涨
 	if (r < 0)
 	{
 		r = -r;
-		*p = true;
+		*p = false;//跌
 	}
 
 
 	if (r > 0.0200)
 	{
-		ret = 10;
+		ret = 80;
 		statistic(*p, 5, ret);
 	}
 	else if (r > 0.0150 && r <= 0.0200)
 	{
-		ret = 10;
+		ret = 40;
 		statistic(*p, 4, ret);
 
 	}
 	else if (r > 0.0100 && r <= 0.0150)
 	{
-		ret = 10;
+		ret = 20;
 		statistic(*p, 3, ret);
 
 	}
 	else if (r > 0.0050 && r <= 0.0100)
 	{
-		ret = 50;
+		ret = 10;
 		statistic(*p, 2, ret);
 
 	}
 	else if (r > 0.0010 && r <= 0.0050)
 	{
-		ret = 100;
+		ret = 5;
 		statistic(*p, 1, ret);
 
 	}
@@ -87,21 +87,25 @@ double price_diff(double a, double b, int *p)
 
 int main()
 {
-	double base = 100 / 2.6061;
-	double dif = 0;
+	double total = 0;
+	double count = 0;
 	double ret = 0;
-	int p;
+	
+	int p = 0;
 
-	for (int i = 0; i < 18; ++i)
+	for (int i = 1; i < 18; ++i)
 	{
-		ret = price_diff(price[i], price[i + 1], &p);
-		price_difff[i] = price[i + 1]- price[i];
+		ret = price_diff(price[i-1], price[i], &p);
+		price_difff[i] = price[i]- price[i-1];
 
-		if (p == true)
-			dif = (ret/ price[i + 1])* (price[i+2] - price[i + 1]);
+		if (p == true) //涨            
+			count -= (ret / price[i + 1]); //卖出股数
 		else
-			dif = (-ret/ price[i + 1]) * (price[i + 2] - price[i + 1]);
+			count += (ret / price[i + 1]); //买入股数
 	}
+
+	//最后的收益
+	total = count * price[19] + g_stat[0].price + g_stat[1].price + g_stat[2].price + g_stat[3].price + g_stat[4].price + g_stat[5].price;
 
 	return 0;
 }
