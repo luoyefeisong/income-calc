@@ -1,0 +1,15 @@
+﻿cl : 命令行 warning D9002: 忽略未知选项“/NODEFAULTLIB:library”
+  log.c
+  p2p_transfer.c
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer.c(29): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer.c(47): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+  p2p_transfer_peer.c
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c(162): warning C4013: “close”未定义；假设外部返回 int
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c(205): warning C4047: “=”:“int”与“HANDLE”的间接级别不同
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c(205): warning C4047: “==”:“int”与“void *”的间接级别不同
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c(525): warning C4133: “函数”: 从“p2p_msg_head_t *”到“const char *”的类型不兼容
+e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c(532): warning C4133: “函数”: 从“p2p_msg_head_t *”到“char *”的类型不兼容
+  正在生成代码...
+  Project2.vcxproj -> E:\Project2\Debug\Project2.exe

@@ -1,0 +1,8 @@
+[2018-10-18 15:57:50][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:282][connect_server] call bind() failed, err: No error
+[2018-10-18 16:03:50][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:282][connect_server] call bind() failed, err: No error
+[2018-10-18 16:04:05][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:282][connect_server] call bind() failed, err: No error
+[2018-10-18 16:04:23][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:284][connect_server] call bind() failed, err: No error
+[2018-10-18 16:09:08][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:285][connect_server] call bind() failed, err: No error
+[2018-10-18 16:11:14][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:285][connect_server] call bind() failed, err: No error
+[2018-10-18 16:14:39][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:297][connect_server] call connect() failed, server ip: 58.220.12.22, err: No error
+[2018-10-18 16:15:45][ ERROR][e:\xueyu\p2p_punch_hole-master\p2p_transfer_tcp\p2p_transfer_peer\p2p_transfer_peer.c:297][connect_server] call connect() failed, server ip: 132.232.3.109, err: No error
